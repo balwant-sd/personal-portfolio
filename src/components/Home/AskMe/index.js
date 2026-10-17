@@ -4,20 +4,24 @@ import './index.scss'
 
 const questions = [
   {
-    q: 'Can you lead a team?',
-    a: 'Yes. I coordinated an 8-member team on Freight Country and a 7-member cross-functional team on Avasar, running sprint planning, delivery, and technical discussions, and I mentor developers day to day.',
+    q: 'What can you build for me?',
+    a: 'End-to-end web and mobile products: marketplaces, CRMs, logistics and data platforms. I cover architecture, database design, APIs, frontend, and deployment, plus the integrations that tie it together, like payments, messaging, and maps.',
   },
   {
-    q: 'How fast can you ship an MVP?',
-    a: 'Fast. I build with agentic AI tools like Claude Code, Cursor, and Lovable. That is how I built JMSS, a full dealership CRM, on my own while cutting the effort by about 50%.',
+    q: 'Can you take an idea to production?',
+    a: 'Yes. I turn rough business goals into clear requirements, design the architecture, build and ship the product with monitoring in place, then keep improving it from real user feedback.',
   },
   {
-    q: 'Have you worked with global clients?',
-    a: 'Yes. I am the primary point of contact for 5+ international clients across the USA, Australia, UAE, and Europe, keeping engineering, design, and QA aligned with their goals.',
+    q: 'How do you keep delivery on track?',
+    a: 'I run Agile sprints against a clear roadmap, break work into owned tasks, flag risks early, and keep engineering, design, QA, and stakeholders working from the same plan.',
   },
   {
-    q: 'What if production breaks?',
-    a: 'I own it. On CRIM Report I traced a sync flaw that blanked nearly 8 million records every night and restructured the cron jobs so the data never has gaps.',
+    q: 'How do you use AI in your work?',
+    a: 'I build with agentic tools like Claude Code, Cursor, Codex, and Lovable to prototype, ship, and test much faster, while I stay accountable for the architecture and code quality.',
+  },
+  {
+    q: 'What if something breaks in production?',
+    a: 'I trace it to the root cause, ship a safe fix quickly, then harden the system with better monitoring and safeguards so it does not happen again.',
   },
 ]
 
