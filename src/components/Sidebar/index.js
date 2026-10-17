@@ -2,7 +2,6 @@ import './index.scss'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import {
   faBriefcase,
-  faEnvelope,
   faHome,
   faLaptopCode,
   faScrewdriverWrench,
@@ -52,13 +51,6 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faScrewdriverWrench} color="#4d4d4e" />
           </NavLink>
 
-          <NavLink
-            activeclassname="active"
-            className="contact-link"
-            to="/contact"
-          >
-            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-          </NavLink>
         </nav>
         <ul>
           <li>

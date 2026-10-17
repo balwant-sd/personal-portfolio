@@ -47,8 +47,9 @@ const About = () => {
             />
           </h1>
           <p>
-            I’m a Senior Software Developer & Project Manager based in Jaipur,
-            India, with 7+ years at Deorwine Infotech. My journey began hands-on
+            I’m a Senior Software Engineer based in Jaipur, India, working as a
+            forward deployed engineer, team lead, and project manager, with 7+
+            years at Deorwine Infotech. My journey began hands-on
             in software engineering and organically expanded into team
             leadership, product thinking, and cross-functional delivery
             ownership.

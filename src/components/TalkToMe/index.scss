@@ -1,0 +1,118 @@
+.talk-to-me {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+
+  .talk-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 22px;
+    border: 1px solid #00ff7f;
+    border-radius: 999px;
+    background: rgba(24, 24, 24, 0.9);
+    color: #00ff7f;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(0, 255, 127, 0.5);
+    animation: talkPulse 2.4s ease-out 3s infinite;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease;
+
+    svg {
+      font-size: 18px;
+    }
+
+    &:hover {
+      background: #00ff7f;
+      color: #000;
+    }
+  }
+
+  &.open .talk-toggle {
+    animation: none;
+  }
+
+  .talk-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      opacity: 0;
+      transform: translateY(16px) scale(0.8);
+      pointer-events: none;
+      transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+
+      &:nth-child(1) {
+        transition-delay: 0.05s;
+      }
+    }
+  }
+
+  &.open .talk-options li {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .talk-label {
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: rgba(24, 24, 24, 0.9);
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .talk-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &.whatsapp {
+      background: #25d366;
+    }
+
+    &.email {
+      background: #ff4500;
+    }
+  }
+}
+
+@keyframes talkPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 127, 0.5);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 14px rgba(0, 255, 127, 0);
+  }
+}

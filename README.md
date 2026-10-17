@@ -1,13 +1,15 @@
 # 🚀 Personal Portfolio
 
-Personal portfolio of **Balwant Singh**, Senior Software Developer & Project Manager based in Jaipur, India. Built with React and featuring smooth animations, responsive design, and a sleek dark theme.
+Personal portfolio of **Balwant Singh**, Senior Software Engineer, Forward Deployed Engineer, Team Lead and Project Manager based in Jaipur, India. Built with React and featuring smooth animations, responsive design, and a sleek dark theme.
 
 Forked from [metal-oopa/personal-portfolio](https://github.com/metal-oopa/personal-portfolio).
 
 ## ✨ Features
 - **Interactive UI** with smooth animations and transitions
 - **Responsive Design** optimized for all devices
-- **Multiple Sections**: Home, About, Experience, Projects, Skills, Contact
+- **Multiple Sections**: Home, About, Experience, Projects, Skills
+- **Scroll navigation** with sections sliding over each other
+- **Let's talk** button for WhatsApp or email
 - **Modern Glassmorphism** design with blur effects
 - **3D Flip Cards** for project showcases
 - **Timeline Layout** for work experience
@@ -18,26 +20,6 @@ Forked from [metal-oopa/personal-portfolio](https://github.com/metal-oopa/person
 - **Animations**: CSS3 Transforms, Keyframes
 - **Deployment**: Vercel
 - **Design**: Glassmorphism, Dark Theme
-
-## 📸 Screenshots
-
-### Home Page
-![Home](screenshots/home.png)
-
-### About Me
-![About](screenshots/about.png)
-
-### Work Experience
-![Experience](screenshots/experience.png)
-
-### Projects Showcase
-![Projects](screenshots/projects.png)
-
-### Skills & Technologies
-![Skills](screenshots/skills.png)
-
-### Contact Information
-![Contact](screenshots/contact.png)
 
 ## 🚀 Quick Start
 

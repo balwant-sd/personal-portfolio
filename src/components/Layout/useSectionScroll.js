@@ -9,7 +9,6 @@ export const sections = [
   '/experience',
   '/projects',
   '/skills',
-  '/contact',
 ]
 
 const COOLDOWN_MS = 1200 // one gesture moves one section
@@ -36,7 +35,7 @@ const findScrollable = (el, direction) => {
 
 // targets that keep the wheel for themselves
 const ignoreTarget = (el) =>
-  el.closest && el.closest('.leaflet-container, textarea, input, select')
+  el.closest && el.closest('textarea, input, select')
 
 const useSectionScroll = () => {
   const navigate = useNavigate()

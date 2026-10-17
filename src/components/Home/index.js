@@ -1,19 +1,18 @@
 import { useEffect, useState } from 'react'
 
 import Loader from 'react-loaders'
-import { Link } from 'react-router-dom'
 
 import AskMe from './AskMe'
 import Logo from './Logo'
+import RoleRotator from './RoleRotator'
 import AnimatedLetters from '../AnimatedLetters'
+import { openTalk } from '../TalkToMe'
 import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = 'alwant'.split('')
-  const jobArray = 'Senior Developer'.split('')
-  const interestArray = '& Project Manager'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -39,24 +38,14 @@ const Home = () => {
               idx={15}
             />
             <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={22}
-            />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={interestArray}
-              idx={22}
-            />
+            <RoleRotator />
           </h1>
           <h2>
             Full Stack Engineering | Product Delivery | Agentic AI Development
           </h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+          <button type="button" className="flat-button" onClick={openTalk}>
+            LET'S TALK
+          </button>
         </div>
         <div className="home-visual">
           <Logo />

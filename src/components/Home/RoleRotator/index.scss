@@ -1,0 +1,15 @@
+.role-rotator {
+  display: inline-block;
+  min-height: 1.2em;
+  color: #ffd700;
+  font-size: 0.72em;
+  white-space: nowrap;
+  animation: fadeIn 1s 1.8s backwards;
+
+  .role-caret {
+    margin-left: 4px;
+    color: #00ff7f;
+    font-weight: 300;
+    animation: blink 0.8s step-end infinite;
+  }
+}
