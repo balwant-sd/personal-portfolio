@@ -38,3 +38,7 @@ npm start
 ```
 
 ---
+
+## 🌍 Deploying
+
+Set `PUBLIC_URL` to the live domain when building (for example `PUBLIC_URL=https://your-domain.com`, or as an environment variable in Vercel/Netlify). Link previews on LinkedIn, WhatsApp and X need the absolute `og:image` URL this produces.
