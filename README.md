@@ -41,4 +41,6 @@ npm start
 
 ## 🌍 Deploying
 
-Set `PUBLIC_URL` to the live domain when building (for example `PUBLIC_URL=https://your-domain.com`, or as an environment variable in Vercel/Netlify). Link previews on LinkedIn, WhatsApp and X need the absolute `og:image` URL this produces.
+The link-preview tags in `public/index.html` (`og:url`, `og:image`, `twitter:image`) use the live domain as absolute URLs, which LinkedIn, WhatsApp and X need. Update them if the domain changes.
+
+On Apache or LiteSpeed hosts (such as Hostinger), `public/.htaccess` sends every route to `index.html` so direct links like `/projects` work. Upload the whole `build` folder, including that hidden file.

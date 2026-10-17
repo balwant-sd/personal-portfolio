@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-import { useLocation, useOutlet } from 'react-router-dom'
+import { useLocation, useNavigate, useOutlet } from 'react-router-dom'
 
 import TalkToMe from '../TalkToMe'
 import useSectionScroll, { sections } from './useSectionScroll'
@@ -14,7 +14,16 @@ const Layout = () => {
   useSectionScroll()
 
   const location = useLocation()
+  const navigate = useNavigate()
   const outlet = useOutlet()
+
+  // #projects (or #/projects) opens that section, on any host
+  useEffect(() => {
+    const name = location.hash.replace(/^#\/?/, '').toLowerCase()
+    const target = name === 'home' ? '/' : `/${name}`
+    if (name && sections.includes(target)) navigate(target, { replace: true })
+  }, [location.hash, navigate])
+
   const [layers, setLayers] = useState([
     { key: location.pathname, element: outlet, direction: null },
   ])
