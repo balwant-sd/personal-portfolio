@@ -1,13 +1,17 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 import Loader from 'react-loaders'
 
+import { skillCategories, skillsFor } from './skillsData'
 import WordCloud from './wordcloud'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+
+  const [category, setCategory] = useState('All')
+  const texts = useMemo(() => skillsFor(category), [category])
 
   const skillsArray = 'Skills'.split('')
 
@@ -31,22 +35,34 @@ const Skills = () => {
             <br />
           </h1>
           <p>
-            I have a strong foundation in both development and operations, with
-            a focus on creating seamless, efficient systems. My experience
-            includes automating deployment processes, designing scalable
-            applications, and working with cloud technologies to deliver
-            reliable solutions.
+            I work across the stack with React, Next.js, Node.js, and Laravel,
+            backed by MongoDB, MySQL, and PostgreSQL, on both monolithic and
+            microservice architectures, deployed to Vercel, Netlify, AWS, and
+            Heroku.
           </p>
           <p>
-            My skill set spans across DevOps, machine learning, full-stack
-            development, and cloud infrastructure. I’m committed to staying
-            updated with the latest advancements and continually refining my
-            expertise to tackle complex challenges effectively.
+            I’ve integrated a wide range of third-party services: Stripe,
+            Razorpay, Telr, and Cardknox for payments; SendGrid, Brevo, Twilio,
+            and SMSGlobal for messaging; Firebase, Google Maps, New Relic, and
+            Sentry. On the delivery side I run Agile, Scrum, and Kanban teams,
+            own roadmaps and stakeholder communication, and mentor developers.
           </p>
+
+          <div className="filter-container">
+            {skillCategories.map((name) => (
+              <button
+                key={name}
+                className={`filter-btn ${category === name ? 'active' : ''}`}
+                onClick={() => setCategory(name)}
+              >
+                {name}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="tagcloud-wrap">
-          <WordCloud />
+          <WordCloud texts={texts} />
         </div>
       </div>
 

@@ -10,51 +10,45 @@ import './index.scss'
 const workExperience = [
   {
     id: 1,
-    company: 'Mak Design Private Limited',
-    companyUrl: 'https://www.makdesign.in/',
-    position: 'Software Development Engineer',
-    duration: 'May 2024 – Present',
-    location: 'Mumbai, Maharashtra (Remote)',
+    company: 'Deorwine Infotech',
+    companyUrl: 'https://deorwine.com/',
+    position: 'Senior Software Developer & Project Manager',
+    duration: 'Oct 2023 – Present',
+    location: 'Jaipur, Rajasthan, India',
     achievements: [
-      'Built a real-time notification module using Django and MongoDB, secured by end-to-end encryption, ensuring timely and confidential delivery of critical alerts to end-users.',
-      'Created a framework for performance analytics loading time, click event response time for maps rendered by different libraries using JavaScript and connected it to a React frontend.'
+      'Managed 4+ major product launches and dozens of feature releases.',
+      'Boosted app performance by ~40% through API and database optimizations for two products.',
+      'Designed databases for 2 major projects with optimized relationships and scalable data flows.',
+      'Created 5+ SOPs that streamlined workflows and saved 500+ cumulative man-hours.',
+      'Improved efficiency and deployment stability by managing releases across Netlify, Vercel, and AWS for 5+ live projects with high uptime and smoother releases.',
+      'Acted as the primary point of contact for 5+ international clients (USA, Australia, UAE, Europe) and coordinated cross-functional workflows across engineering, design, QA, and client.'
     ]
   },
   {
     id: 2,
-    company: 'Defence Research and Development Organisation (DRDO)',
-    companyUrl: 'https://www.drdo.gov.in/drdo/',
-    position: 'Software Development Engineer',
-    duration: 'May 2023 – May 2024',
-    location: 'Gwalior, Madhya Pradesh (Hybrid)',
+    company: 'Deorwine Infotech',
+    companyUrl: 'https://deorwine.com/',
+    position: 'Software Developer',
+    duration: 'June 2020 – Oct 2023',
+    location: 'Jaipur, Rajasthan, India',
     achievements: [
-      'Engineered a heavy-gas dispersion model (Java), with 92% predictive accuracy, enhancing hazard prediction capabilities for safety teams.',
-      'Designed and implemented a Java Swing GUI, validated through improved usability testing, to streamline and simplify end-user interactions.',
-      'Developed a 2D plotting tool in Python backed by a Flask API, enabling data visualization that improved decision-making clarity among project stakeholders.'
+      'Delivered 3+ full-scale web applications across logistics, pharma, and marketplace domains.',
+      'Contributed across the stack using React, Next.js, Node.js, MySQL, and REST APIs.',
+      'Improved system performance through API optimizations and architectural refinements.',
+      'Took ownership of module design, requirement clarification, and team coordination.'
     ]
   },
   {
     id: 3,
-    company: 'Verified Network',
-    companyUrl: 'https://www.verified.network/',
-    position: 'DevOps Engineer — Contract',
-    duration: 'February 2023 — May 2023',
-    location: 'Switzerland (Remote)',
+    company: 'Deorwine Infotech',
+    companyUrl: 'https://deorwine.com/',
+    position: 'Junior Software Developer',
+    duration: 'Apr 2019 – June 2020',
+    location: 'Jaipur, Rajasthan, India',
     achievements: [
-      'Redesigned the trading platform\'s core engine by implementing an order-matching system using IPFS Merkle DAG and IPFS pub-sub on a Node.js/Express.js server, reducing transaction times by 70% and increasing marketplace efficiency.',
-      'Achieved 90% test coverage by architecting comprehensive test suites with Chai and Mocha, ensuring robust code quality and reliability.',
-      'Engineered the CI/CD pipeline (GitHub Actions and AWS CodeDeploy) resulting in fully automated deployments and accelerating release cycles.'
-    ]
-  },
-  {
-    id: 4,
-    company: 'Metarootz',
-    companyUrl: 'https://www.metarootz.io/',
-    position: 'Software Development Engineer — Contract',
-    duration: 'December 2022 — February 2023',
-    location: 'Dubai, UAE (Remote)',
-    achievements: [
-      'Developed a social media platform using Node.js/Express.js, Next.js, and MongoDB, scaled it to 10,000+ active users, and integrated WebSocket-based voice/video calling to boost user engagement and interaction.'
+      'Built foundational skills using React.js, PHP, and MySQL.',
+      'Supported senior developers and contributed to API integrations and UI enhancements.',
+      'Learned to operate in different project environments and adapt to varying expectations.'
     ]
   }
 ]
@@ -82,9 +76,11 @@ const Experience = () => {
             />
           </h1>
           <p>
-            My professional journey spans across various industries and technologies,
-            from defense systems to trading platforms and social media applications.
-            Each role has contributed to my growth as a versatile software engineer.
+            Since 2019 I’ve grown at Deorwine Infotech from junior developer to
+            senior developer and project manager, shipping products for
+            startups and international clients across logistics, pharma,
+            automotive, and marketplaces. Before that I earned a B.Tech in
+            Computer Science from Rajasthan Technical University, Kota.
           </p>
         </div>
 

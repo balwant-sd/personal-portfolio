@@ -1,0 +1,73 @@
+.ask-me {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 20px;
+  background: rgba(24, 24, 24, 0.85);
+  border: 1px solid rgba(0, 255, 127, 0.3);
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 1s 2.5s backwards;
+  font-family: 'Helvetica Neue', sans-serif;
+
+  h3 {
+    margin: 0 0 12px;
+    color: #00ff7f;
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    padding: 5px 0;
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 15px;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: color 0.2s ease;
+
+    &:hover,
+    &.active {
+      color: #ffd700;
+    }
+
+    .prompt {
+      color: #00ff7f;
+    }
+  }
+
+  .answer {
+    min-height: 88px;
+    margin: 12px 0 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .caret {
+    margin-left: 1px;
+    color: #00ff7f;
+    animation: blink 0.8s step-end infinite;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

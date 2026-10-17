@@ -130,9 +130,10 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I’m open to new opportunities and collaborations! If you’re looking
-            for someone who can bring fresh ideas and deliver impactful results,
-            let’s get in touch!
+            I’m open to new opportunities and collaborations, whether that’s
+            leading product delivery, building full-stack platforms, or shipping
+            fast with agentic AI tooling. Drop me a line at
+            balwantsingh.sd@outlook.com or use the form below.
           </p>
 
           <div className="contact-form">
@@ -180,18 +181,18 @@ const Contact = () => {
         </div>
         <div className="map-wrap">
           <div className="info-map">
-            Sudip Banerjee
+            Balwant Singh
             <br />
-            Kolkata, <br />
-            West Bengal, <br />
+            Jaipur, <br />
+            Rajasthan, <br />
             India
             <br />
           </div>
-          <MapContainer center={[22.56263, 88.36304]} zoom={13}>
+          <MapContainer center={[26.9124, 75.7873]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[22.56263, 88.36304]}>
+            <Marker position={[26.9124, 75.7873]}>
               <Popup>
-                Sudip lives here, come over for a cup of coffee :{')'}
+                Balwant lives here, come over for a cup of coffee :{')'}
               </Popup>
             </Marker>
           </MapContainer>

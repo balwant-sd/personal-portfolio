@@ -4,6 +4,7 @@ import { faCode, faCodeBranch, faExternalLinkAlt } from '@fortawesome/free-solid
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
 
+import { iconFor } from './techIcons'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
@@ -11,38 +12,37 @@ import './index.scss'
 const projects = [
   {
     id: 1,
-    title: 'Real-time Notification System',
-    description: 'Built a comprehensive real-time notification module using Django and MongoDB with end-to-end encryption for secure delivery of critical alerts.',
-    technologies: ['Django', 'MongoDB', 'WebSocket', 'End-to-End Encryption', 'Python'],
-    category: 'Backend Development',
-    status: 'Completed',
-    year: '2024',
-    company: 'Mak Design Private Limited',
+    title: 'CRIM Report',
+    description: 'A real-time carrier vetting and freight fraud prevention platform that aggregates FMCSA compliance data, industry-reported fraud footprints, and identity verification logs to flag high-risk carriers before loads are booked.',
+    technologies: ['Next.js', 'Supabase', 'Lovable', 'Claude Code', 'Cron Jobs'],
+    category: 'Logistics',
+    status: 'Live',
+    company: 'Deorwine Infotech',
     features: [
-      'Real-time delivery of notifications',
-      'End-to-end encryption for security',
-      'Scalable MongoDB backend',
-      'WebSocket integration for instant updates'
+      'Forward-deployed engineering contact embedded with clients',
+      'Rapid build-ship-iterate loops with agentic AI tools',
+      'Resilient ingestion pipeline that survived breaking upstream schema changes',
+      'Fixed a sync flaw that blanked ~8M records nightly, guaranteeing zero data gaps',
+      'Post-launch monitoring, root-cause analysis, and hotfixes'
     ],
-    images: [], // Provision for multiple images
-    githubUrl: null, // Private project
-    liveUrl: null, // Private project
+    images: [],
+    githubUrl: null,
+    liveUrl: null,
     isPrivate: true
   },
   {
     id: 2,
-    title: 'Performance Analytics Framework',
-    description: 'Created a comprehensive framework for tracking performance analytics including loading times and click event response times for map libraries, connected to a React frontend.',
-    technologies: ['JavaScript', 'React', 'Performance API', 'Data Visualization', 'Analytics'],
-    category: 'Frontend Development',
+    title: 'Freight Country',
+    description: 'A logistics marketplace enabling users to manage the complete freight lifecycle end to end.',
+    technologies: ['Next.js', 'Flutter', 'Python', 'PostgreSQL'],
+    category: 'Logistics',
     status: 'Completed',
-    year: '2024',
-    company: 'Mak Design Private Limited',
+    company: 'Deorwine Infotech',
     features: [
-      'Real-time performance monitoring',
-      'Map library performance comparison',
-      'React-based dashboard',
-      'Interactive data visualization'
+      'Led coordination for an 8-member team',
+      'Sprint planning, delivery, and technical discussions',
+      'Client communication and requirement clarification',
+      'Resolved architecture challenges and authored SOPs for third-party API integrations'
     ],
     images: [],
     githubUrl: null,
@@ -51,18 +51,17 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Heavy-Gas Dispersion Model',
-    description: 'Engineered a sophisticated heavy-gas dispersion model with 92% predictive accuracy, enhancing hazard prediction capabilities for safety teams.',
-    technologies: ['Java', 'Mathematical Modeling', 'Algorithm Design', 'Safety Systems'],
-    category: 'Scientific Computing',
+    title: 'JMSS',
+    description: 'A CRM platform for automobile dealerships, managing the complete workflow from sales to service.',
+    technologies: ['Next.js', 'MongoDB', 'Cursor AI'],
+    category: 'CRM',
     status: 'Completed',
-    year: '2023',
-    company: 'DRDO',
+    company: 'Deorwine Infotech',
     features: [
-      '92% predictive accuracy',
-      'Advanced mathematical modeling',
-      'Safety team integration',
-      'Real-time hazard prediction'
+      'Designed and built the entire platform single-handedly',
+      'AI-assisted development cut effort by ~50%',
+      'Scalable architecture with secure access control',
+      'Workflows for leads, service tracking, customers, and finance records'
     ],
     images: [],
     githubUrl: null,
@@ -71,18 +70,17 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Java Swing GUI Application',
-    description: 'Designed and implemented a user-friendly Java Swing GUI validated through usability testing to streamline end-user interactions.',
-    technologies: ['Java', 'Swing', 'GUI Design', 'Usability Testing', 'UX/UI'],
-    category: 'Desktop Application',
+    title: 'Avasar',
+    description: 'A digital brand-engagement platform powered by real-time validation and personalization.',
+    technologies: ['Laravel', 'Flutter', 'PostgreSQL'],
+    category: 'Brand Engagement',
     status: 'Completed',
-    year: '2023',
-    company: 'DRDO',
+    company: 'Deorwine Infotech',
     features: [
-      'Intuitive user interface',
-      'Validated through usability testing',
-      'Streamlined user interactions',
-      'Cross-platform compatibility'
+      'Designed the full technical architecture and database schema',
+      'Optimized task and reward workflows',
+      'Led coordination for a 7-member cross-functional team',
+      'Worked with stakeholders to validate solutions and deliver end to end'
     ],
     images: [],
     githubUrl: null,
@@ -91,78 +89,17 @@ const projects = [
   },
   {
     id: 5,
-    title: '2D Data Visualization Tool',
-    description: 'Developed a Python-based 2D plotting tool backed by Flask API for enhanced data visualization and improved decision-making clarity.',
-    technologies: ['Python', 'Flask', 'Data Visualization', 'API Development', 'Charts'],
-    category: 'Data Visualization',
+    title: 'Bidbyt',
+    description: 'An internet startup building F&B marketplaces with the mission of making authentic cuisines easily accessible across borders.',
+    technologies: ['PWA', 'Next.js', 'Fastify', 'MongoDB'],
+    category: 'Marketplace',
     status: 'Completed',
-    year: '2023',
-    company: 'DRDO',
+    company: 'Deorwine Infotech',
     features: [
-      'Interactive 2D plotting',
-      'Flask API backend',
-      'Real-time data processing',
-      'Decision-making insights'
-    ],
-    images: [],
-    githubUrl: null,
-    liveUrl: null,
-    isPrivate: true
-  },
-  {
-    id: 6,
-    title: 'IPFS Trading Platform Engine',
-    description: 'Redesigned trading platform core engine with IPFS Merkle DAG and pub-sub system, reducing transaction times by 70%.',
-    technologies: ['Node.js', 'Express.js', 'IPFS', 'Merkle DAG', 'Blockchain', 'Pub-Sub'],
-    category: 'Blockchain Development',
-    status: 'Completed',
-    year: '2023',
-    company: 'Verified Network',
-    features: [
-      '70% reduction in transaction times',
-      'IPFS Merkle DAG implementation',
-      'Pub-sub messaging system',
-      'Enhanced marketplace efficiency'
-    ],
-    images: [],
-    githubUrl: null,
-    liveUrl: null,
-    isPrivate: true
-  },
-  {
-    id: 7,
-    title: 'Automated CI/CD Pipeline',
-    description: 'Engineered comprehensive CI/CD pipeline using GitHub Actions and AWS CodeDeploy for fully automated deployments.',
-    technologies: ['GitHub Actions', 'AWS CodeDeploy', 'DevOps', 'Automation', 'Cloud'],
-    category: 'DevOps',
-    status: 'Completed',
-    year: '2023',
-    company: 'Verified Network',
-    features: [
-      'Fully automated deployments',
-      'GitHub Actions integration',
-      'AWS CodeDeploy implementation',
-      'Accelerated release cycles'
-    ],
-    images: [],
-    githubUrl: null,
-    liveUrl: null,
-    isPrivate: true
-  },
-  {
-    id: 8,
-    title: 'Social Media Platform',
-    description: 'Developed a scalable social media platform with WebSocket-based voice/video calling, serving 10,000+ active users.',
-    technologies: ['Node.js', 'Express.js', 'Next.js', 'MongoDB', 'WebSocket', 'WebRTC'],
-    category: 'Full Stack Development',
-    status: 'Completed',
-    year: '2022',
-    company: 'Metarootz',
-    features: [
-      '10,000+ active users',
-      'WebSocket voice/video calling',
-      'Scalable architecture',
-      'Real-time communication'
+      'Grew from developer to leading the product with the founder',
+      'Turned customer feedback and business requirements into features fast',
+      'Owned monitoring, debugging, and day-to-day operations',
+      'Contributed to product and growth strategy'
     ],
     images: [],
     githubUrl: null,
@@ -203,9 +140,10 @@ const Projects = () => {
             />
           </h1>
           <p>
-            A showcase of my technical projects spanning various domains including
-            backend development, data visualization, blockchain, and DevOps. Each project
-            represents a solution to real-world challenges.
+            A selection of products I’ve built and led across logistics, CRM,
+            brand engagement, and marketplaces. I’ve also delivered MedVol
+            Stockists, LiveLoad, GoFetchIt, DocumentMaken, Kuwait Local, and
+            more.
           </p>
           
           {/* Category Filter */}
@@ -241,7 +179,7 @@ const Projects = () => {
                   <div className="project-header">
                     <div className="project-meta">
                       <span className="category">{project.category}</span>
-                      <span className="year">{project.year}</span>
+                      {project.year && <span className="year">{project.year}</span>}
                       <span className={`status ${project.status.toLowerCase()}`}>
                         {project.status}
                       </span>
@@ -262,9 +200,15 @@ const Projects = () => {
                   </div>
 
                   <div className="technologies">
-                    {project.technologies.map((tech, idx) => (
-                      <span key={idx} className="tech-tag">{tech}</span>
-                    ))}
+                    {project.technologies.map((tech) => {
+                      const { Icon, color } = iconFor(tech)
+                      return (
+                        <span key={tech} className="tech-tag">
+                          <Icon color={color} aria-hidden="true" />
+                          {tech}
+                        </span>
+                      )
+                    })}
                   </div>
 
                   <div className="project-links">

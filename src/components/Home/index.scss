@@ -39,11 +39,11 @@
       }
     }
 
-    img {
+    .title-initial {
+      display: inline-block;
       margin-left: 20px;
+      color: #ffd700;
       opacity: 0;
-      width: 32px;
-      height: auto;
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
       user-select: none;
@@ -88,5 +88,31 @@
     -o-user-select: none;
     user-select: none;
   }
+
+  .home-visual {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  .home-page {
+    .text-zone h1 {
+      font-size: 44px;
+      line-height: 52px;
+    }
+
+    .home-visual {
+      width: 340px;
+      right: 3%;
+    }
+  }
+}

@@ -1,77 +1,45 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 import TagCloud from 'TagCloud'
 
-const WordCloud = () => {
-  const [isLoading, setLoad] = useState(true)
+const options = {
+  radius: 300,
+  // animation speed
+  // slow, normal, fast
+  maxSpeed: 'fast',
+  initSpeed: 'fast',
+  // 0 = top
+  // 90 = left
+  // 135 = right-bottom
+  direction: 135,
+  // interact with cursor move on mouse out
+  keep: true,
+}
 
-  const container = '.content'
-  const texts = [
-    'Python',
-    'Typescript',
-    'Golang',
-    'C++',
-    'SQL',
-    'Bash',
-    'React',
-    'NextJS',
-    'Firebase',
-    'Django',
-    'Flask',
-    'NodeJS',
-    'Express',
-    'GraphQL',
-    'FastAPI',
-    'MySQL',
-    'PostgreSQL',
-    'MongoDB',
-    'Redis',
-    'TensorFlow',
-    'Keras',
-    'PyTorch',
-    'Scikit-learn',
-    'OpenCV',
-    'Docker',
-    'Kubernetes',
-    'GCP',
-    'AWS',
-    'Terraform',
-    'Git',
-    'GitHub',
-    'Linux',
-    'Java',
-    'Flutter',
-    'Dart',
-    'HTML5',
-    'CSS3',
-    'JS',
-    'C',
-    'Solidity',
-  ]
-  const options = {
-    radius: 300,
-    // animation speed
-    // slow, normal, fast
-    maxSpeed: 'fast',
-    initSpeed: 'fast',
-    // 0 = top
-    // 90 = left
-    // 135 = right-bottom
-    direction: 135,
-    // interact with cursor move on mouse out
-    keep: true,
-  }
-  //   to render wordcloud each time the page is reloaded
+const WordCloud = ({ texts }) => {
+  const containerRef = useRef(null)
+  const cloudRef = useRef(null)
+
+  // create the cloud once, then swap its words when the category changes
   useEffect(() => {
-    if (isLoading) {
-      TagCloud(container, texts, options)
-      setLoad(false)
+    if (!cloudRef.current) {
+      cloudRef.current = TagCloud(containerRef.current, texts, options)
+    } else {
+      cloudRef.current.update(texts)
     }
-  })
+  }, [texts])
+
+  useEffect(
+    () => () => {
+      cloudRef.current?.destroy()
+      cloudRef.current = null
+    },
+    []
+  )
 
   return (
     <div className="main">
-      <span className="content"></span>
+      <span className="content" ref={containerRef}></span>
     </div>
   )
 }

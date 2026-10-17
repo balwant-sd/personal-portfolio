@@ -11,15 +11,25 @@
     display: block;
     padding: 8px 0;
 
-    img {
-      display: block;
-      margin: 8px auto;
-      width: 24px;
-      height: auto;
+    text-align: center;
+    text-decoration: none;
 
-      &.sub-logo {
-        width: 50px;
-      }
+    .logo-initial {
+      display: block;
+      margin: 8px auto 0;
+      color: #ffd700;
+      font-family: 'Coolvetica', sans-serif;
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .sub-logo {
+      display: block;
+      margin: 4px auto 8px;
+      color: #fff;
+      font-family: 'Coolvetica', sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.5px;
     }
   }
 
@@ -81,6 +91,21 @@
     a.about-link {
       &:after {
         content: 'ABOUT';
+      }
+    }
+
+    a.experience-link {
+      &:after {
+        content: 'EXPERIENCE';
+        font-size: 8px;
+        letter-spacing: 0.5px;
+      }
+    }
+
+    a.projects-link {
+      &:after {
+        content: 'PROJECTS';
+        letter-spacing: 1px;
       }
     }
 

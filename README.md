@@ -1,9 +1,8 @@
 # 🚀 Personal Portfolio
 
-A modern, interactive portfolio website showcasing my journey as a Software Development Engineer. Built with React and featuring smooth animations, responsive design, and a sleek dark theme.
+Personal portfolio of **Balwant Singh**, Senior Software Developer & Project Manager based in Jaipur, India. Built with React and featuring smooth animations, responsive design, and a sleek dark theme.
 
-## 🌐 Live 
-**[Visit Portfolio](https://portfolio-metaloopa.vercel.app)**
+Forked from [metal-oopa/personal-portfolio](https://github.com/metal-oopa/personal-portfolio).
 
 ## ✨ Features
 - **Interactive UI** with smooth animations and transitions
@@ -44,7 +43,7 @@ A modern, interactive portfolio website showcasing my journey as a Software Deve
 
 ```bash
 # Clone the repository
-git clone https://github.com/metal-oopa/personal-portfolio.git
+git clone https://github.com/balwant-sd/personal-portfolio.git
 
 # Navigate to project directory
 cd personal-portfolio

@@ -1,0 +1,33 @@
+import { FaArrowPointer, FaClock, FaCode, FaHeart } from 'react-icons/fa6'
+import {
+  SiClaude,
+  SiFastify,
+  SiFlutter,
+  SiLaravel,
+  SiMongodb,
+  SiNextdotjs,
+  SiPostgresql,
+  SiPwa,
+  SiPython,
+  SiSupabase,
+} from 'react-icons/si'
+
+// logo + brand colour per technology; anything missing falls back to a code icon
+const techIcons = {
+  'Next.js': { Icon: SiNextdotjs, color: '#ffffff' },
+  Supabase: { Icon: SiSupabase, color: '#3ecf8e' },
+  Lovable: { Icon: FaHeart, color: '#ff6b8b' },
+  'Claude Code': { Icon: SiClaude, color: '#d97757' },
+  'Cron Jobs': { Icon: FaClock, color: '#ffd700' },
+  Flutter: { Icon: SiFlutter, color: '#47c5fb' },
+  Python: { Icon: SiPython, color: '#4b8bbe' },
+  PostgreSQL: { Icon: SiPostgresql, color: '#6b9bd2' },
+  MongoDB: { Icon: SiMongodb, color: '#47a248' },
+  'Cursor AI': { Icon: FaArrowPointer, color: '#ffffff' },
+  Laravel: { Icon: SiLaravel, color: '#ff2d20' },
+  PWA: { Icon: SiPwa, color: '#a78bfa' },
+  Fastify: { Icon: SiFastify, color: '#ffffff' },
+}
+
+export const iconFor = (tech) =>
+  techIcons[tech] || { Icon: FaCode, color: '#00ff7f' }

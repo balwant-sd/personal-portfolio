@@ -1,39 +1,43 @@
 .logo-container {
   z-index: 0;
-  width: 400px;
-  height: 609px;
+  width: 190px;
+  height: 240px;
   opacity: 1;
-  position: absolute;
-  top: 0;
-  right: 15%;
-  bottom: 0;
-  left: auto;
-  margin: auto;
+  position: relative;
   animation: zoomInDown 2.5s ease-in-out 1s;
   user-select: none;
 
   svg {
     width: 100%;
-    height: auto;
-    bottom: 0;
+    height: 100%;
     transform: rotateZ(30deg) !important;
   }
 
+  text {
+    font-family: 'Coolvetica', sans-serif;
+    font-size: 220px;
+    text-anchor: middle;
+    dominant-baseline: central;
+  }
+
   .solid-logo {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    opacity: 1;
-    transform: rotateZ(30deg) !important;
-    z-index: 1;
+    fill: #ffd700;
+    opacity: 0;
+    animation: fadeIn 1s ease-in 3.5s forwards;
   }
 }
 
 .svg-container {
+  fill: none;
   stroke: #ffd700;
-  stroke-width: 10;
+  stroke-width: 4;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: drawLogo 3s ease-in-out 1s forwards;
+}
+
+@keyframes drawLogo {
+  to {
+    stroke-dashoffset: 0;
+  }
 }

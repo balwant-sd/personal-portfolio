@@ -3,18 +3,17 @@ import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { Link } from 'react-router-dom'
 
+import AskMe from './AskMe'
 import Logo from './Logo'
-import LogoTitle from '../../assets/images/logo-s.png'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import styles from './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = 'udip'.split('')
-  const jobArray = 'Software Engineer'.split('')
-  const interestArray = 'FullStack | DevOps '.split('')
+  const nameArray = 'alwant'.split('')
+  const jobArray = 'Senior Developer'.split('')
+  const interestArray = '& Project Manager'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -33,7 +32,7 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt="Sudip Banerjee" />
+            <span className="title-initial">B</span>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -53,14 +52,16 @@ const Home = () => {
             />
           </h1>
           <h2>
-            Streamlining Workflows | Deploying Intelligent Systems | Building
-            Scalable Applications
+            Full Stack Engineering | Product Delivery | Agentic AI Development
           </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        <div className="home-visual">
+          <Logo />
+          <AskMe />
+        </div>
       </div>
 
       <Loader type="pacman" />
