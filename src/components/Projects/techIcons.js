@@ -1,6 +1,14 @@
-import { FaArrowPointer, FaClock, FaCode, FaHeart } from 'react-icons/fa6'
 import {
+  FaArrowPointer,
+  FaClock,
+  FaCode,
+  FaHeart,
+  FaServer,
+} from 'react-icons/fa6'
+import {
+  SiAmazons3,
   SiClaude,
+  SiExpress,
   SiFastify,
   SiFlutter,
   SiLaravel,
@@ -9,6 +17,7 @@ import {
   SiPostgresql,
   SiPwa,
   SiPython,
+  SiReact,
   SiSupabase,
 } from 'react-icons/si'
 
@@ -27,6 +36,10 @@ const techIcons = {
   Laravel: { Icon: SiLaravel, color: '#ff2d20' },
   PWA: { Icon: SiPwa, color: '#a78bfa' },
   Fastify: { Icon: SiFastify, color: '#ffffff' },
+  'Express.js': { Icon: SiExpress, color: '#ffffff' },
+  React: { Icon: SiReact, color: '#61dafb' },
+  Linode: { Icon: FaServer, color: '#00a95c' },
+  'AWS S3': { Icon: SiAmazons3, color: '#e25444' },
 }
 
 export const iconFor = (tech) =>

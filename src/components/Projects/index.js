@@ -126,7 +126,7 @@ const projects = [
       'A B2B web portal where pharmaceutical stockists manage orders, invoices, purchase orders and returns across multiple pharma companies and business modules.',
     category: 'Pharma B2B',
     company: 'Deorwine Infotech',
-    technologies: [],
+    technologies: ['Next.js'],
     features: [
       'Owned the portal end to end as the only frontend engineer, from wireframes and UI design to architecture and production releases',
       'Core workflows for orders, invoice upload and tracking, purchase orders, remarks, goods returns, and e-invoice acknowledgements',
@@ -148,7 +148,7 @@ const projects = [
       'A Gulf-focused B2C delivery startup where customers request orders, book pickups and returns, and schedule deliveries, while the business assigns drivers manually or automatically in real time.',
     category: 'Logistics',
     company: 'Deorwine Infotech',
-    technologies: [],
+    technologies: ['Express.js', 'React', 'MongoDB', 'Linode', 'AWS S3'],
     features: [
       'Owned database design and API development',
       'Order, pickup, return and scheduled-delivery flows',
@@ -167,7 +167,7 @@ const projects = [
       'An Africa-focused logistics marketplace where customers post single pickup to single delivery loads, vendors bid on them, and the assigned vendor hauls the parcel to its destination.',
     category: 'Logistics',
     company: 'Deorwine Infotech',
-    technologies: [],
+    technologies: ['React', 'Fastify', 'MongoDB', 'AWS S3'],
     features: [
       'Owned the web app, admin portal, database and API development',
       'Load posting, vendor bidding and assignment workflows',
