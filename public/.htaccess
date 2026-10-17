@@ -1,8 +1,13 @@
-# Single-page app: serve index.html for any path that isn't a real file,
-# so direct links like /projects load the app instead of the host's 404 page.
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # one address for search engines: send www to the bare domain
+  RewriteCond %{HTTP_HOST} ^www\.balwantsingh\.in$ [NC]
+  RewriteRule ^(.*)$ https://balwantsingh.in/$1 [R=301,L]
+
+  # single-page app: serve index.html for any path that isn't a real file,
+  # so direct links like /projects load the app instead of the host's 404 page
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
