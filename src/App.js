@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Soundbar from './components/Soundbar'
 import './App.scss'
+import './mobile.scss'
 
 function App() {
   return (

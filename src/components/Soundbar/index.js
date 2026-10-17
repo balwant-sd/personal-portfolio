@@ -88,7 +88,7 @@ const SoundBar = () => {
     }
   }
   return (
-    <Box onClick={() => handleClick()}>
+    <Box className="soundbar" onClick={() => handleClick()}>
       <Line itemScope={click} />
       <Line itemScope={click} />
       <Line itemScope={click} />

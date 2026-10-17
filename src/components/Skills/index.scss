@@ -16,3 +16,69 @@
     color: #00ff7f;
   }
 }
+
+.icon-bar {
+  position: absolute;
+  left: 10%;
+  right: 210px; // clear of the Let's talk button
+  bottom: 0;
+  overflow: hidden;
+  padding: 10px 0 6px;
+  animation: fadeIn 1s 1.5s backwards;
+  // fade the logos in and out at both edges
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+
+  &:hover .icon-track {
+    animation-play-state: paused;
+  }
+}
+
+.icon-track {
+  display: flex;
+  width: max-content;
+  animation: iconScroll linear infinite;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 92px;
+  font-size: 34px;
+  transition: transform 0.2s ease;
+
+  .icon-name {
+    color: #8d8d8d;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px) scale(1.15);
+
+    .icon-name {
+      opacity: 1;
+      color: #fff;
+    }
+  }
+}
+
+@keyframes iconScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

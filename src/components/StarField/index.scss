@@ -1,0 +1,7 @@
+// sits above the section backgrounds but below page content (.container is z-index 1)
+.star-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 
 import Loader from 'react-loaders'
 
+import IconBar from './iconbar'
 import { skillCategories, skillsFor } from './skillsData'
 import WordCloud from './wordcloud'
 import AnimatedLetters from '../AnimatedLetters'
@@ -64,6 +65,8 @@ const Skills = () => {
         <div className="tagcloud-wrap">
           <WordCloud texts={texts} />
         </div>
+
+        <IconBar skills={texts} />
       </div>
 
       <Loader type="pacman" />

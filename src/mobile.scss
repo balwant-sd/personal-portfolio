@@ -1,0 +1,197 @@
+// Phone and small-tablet layout. Loaded last so it overrides the desktop styles.
+@media screen and (max-width: 768px) {
+  // sidebar becomes a top bar
+  .App .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    box-sizing: border-box;
+    z-index: 5;
+
+    .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      padding: 0;
+
+      .logo-initial {
+        margin: 0;
+        font-size: 28px;
+      }
+
+      .sub-logo {
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+
+    nav {
+      position: static;
+      display: flex;
+      width: auto;
+      height: auto;
+      margin: 0;
+
+      a {
+        width: 40px;
+        height: 44px;
+        line-height: 44px;
+        font-size: 19px;
+
+        &:after {
+          display: none;
+        }
+
+        &:hover svg {
+          opacity: 1;
+        }
+      }
+    }
+
+    ul {
+      display: none;
+    }
+  }
+
+  .App .tags {
+    display: none;
+  }
+
+  .soundbar {
+    top: auto !important;
+    right: auto !important;
+    bottom: 2.6rem;
+    left: 2rem;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
+  // each section scrolls on its own, content stacked top to bottom
+  .App .section-layer {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .App .container {
+    position: relative;
+    top: 0;
+    height: auto;
+    min-height: 100%;
+    padding: 84px 20px 110px;
+    box-sizing: border-box;
+  }
+
+  .App .container .text-zone,
+  .App .home-page .text-zone,
+  .App .container.about-page .text-zone,
+  .App .container.skills-page .text-zone,
+  .App .container.experience-page .text-zone,
+  .App .container.projects-page .text-zone {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-height: none;
+    display: block;
+
+    h1 {
+      font-size: 40px;
+      line-height: 46px;
+      left: 0;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  // home
+  .App .home-page {
+    .text-zone h1 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    .flat-button {
+      float: none;
+      display: inline-block;
+    }
+
+    .home-visual {
+      position: static;
+      transform: none;
+      width: 100%;
+      margin-top: 32px;
+    }
+
+    .logo-container {
+      display: none;
+    }
+  }
+
+  .role-rotator {
+    font-size: 0.6em;
+  }
+
+  // about
+  .App .stage-cube-cont {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    padding-top: 40px;
+    overflow: visible;
+  }
+
+  // experience and projects lists flow with the page
+  .App .experience-container,
+  .App .projects-container {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  // skills
+  .App .tagcloud-wrap {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 24px 0 0;
+    display: flex;
+    justify-content: center;
+
+    .tagcloud {
+      margin: 0 auto;
+      font-size: 15px;
+    }
+  }
+
+  .App .icon-bar {
+    position: relative;
+    left: auto;
+    right: auto;
+    margin-top: 16px;
+  }
+
+  // talk button
+  .talk-to-me {
+    right: 16px;
+    bottom: 16px;
+
+    .talk-toggle {
+      padding: 12px 18px;
+    }
+  }
+}

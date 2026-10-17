@@ -23,7 +23,12 @@ const WordCloud = ({ texts }) => {
   // create the cloud once, then swap its words when the category changes
   useEffect(() => {
     if (!cloudRef.current) {
-      cloudRef.current = TagCloud(containerRef.current, texts, options)
+      // shrink the globe to fit narrow screens
+      const radius = Math.min(300, Math.floor((window.innerWidth - 60) / 2))
+      cloudRef.current = TagCloud(containerRef.current, texts, {
+        ...options,
+        radius,
+      })
     } else {
       cloudRef.current.update(texts)
     }

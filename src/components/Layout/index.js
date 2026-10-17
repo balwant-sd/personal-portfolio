@@ -5,6 +5,7 @@ import { useLocation, useOutlet } from 'react-router-dom'
 import TalkToMe from '../TalkToMe'
 import useSectionScroll, { sections } from './useSectionScroll'
 import Sidebar from '../Sidebar/'
+import StarField from '../StarField'
 import './index.scss'
 
 const TRANSITION_MS = 800
@@ -32,7 +33,10 @@ const Layout = () => {
       { key: location.pathname, element: outlet, direction },
     ])
     const timer = setTimeout(
-      () => setLayers((current) => current.slice(-1)),
+      () =>
+        setLayers((current) =>
+          current.slice(-1).map((layer) => ({ ...layer, direction: null }))
+        ),
       TRANSITION_MS
     )
     return () => clearTimeout(timer)
@@ -55,10 +59,8 @@ const Layout = () => {
             {layer.element}
           </div>
         ))}
+        <StarField />
         <span className="tags bottom-tags">
-          <div id="stars"></div>
-          <div id="stars2"></div>
-          <div id="stars3"></div>
           &lt;/body&gt;
           <br />
           <span className="bottom-tag-html">&lt;/html&gt;</span>
