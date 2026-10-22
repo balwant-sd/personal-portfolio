@@ -11,10 +11,17 @@ export const sections = [
   '/skills',
 ]
 
+export const sectionNames = {
+  '/': 'Home',
+  '/about': 'About',
+  '/experience': 'Experience',
+  '/projects': 'Projects',
+  '/skills': 'Skills',
+}
+
 const COOLDOWN_MS = 1200 // one gesture moves one section
 const SETTLE_MS = 700 // wait after an inner list stops scrolling
 const WHEEL_THRESHOLD = 40
-const SWIPE_THRESHOLD = 60
 
 // nearest ancestor that can still scroll in the given direction
 const findScrollable = (el, direction) => {
@@ -77,27 +84,10 @@ const useSectionScroll = () => {
       go(direction, e.target)
     }
 
-    let touchStartY = null
-    let touchTarget = null
-    const onTouchStart = (e) => {
-      touchStartY = e.touches[0].clientY
-      touchTarget = e.target
-    }
-    const onTouchEnd = (e) => {
-      if (touchStartY === null) return
-      const deltaY = touchStartY - e.changedTouches[0].clientY
-      touchStartY = null
-      if (Math.abs(deltaY) < SWIPE_THRESHOLD) return
-      go(deltaY > 0 ? 1 : -1, touchTarget)
-    }
-
+    // touch swipes only scroll; on phones the Next button changes section
     window.addEventListener('wheel', onWheel, { passive: true })
-    window.addEventListener('touchstart', onTouchStart, { passive: true })
-    window.addEventListener('touchend', onTouchEnd, { passive: true })
     return () => {
       window.removeEventListener('wheel', onWheel)
-      window.removeEventListener('touchstart', onTouchStart)
-      window.removeEventListener('touchend', onTouchEnd)
     }
   }, [pathname, navigate])
 }

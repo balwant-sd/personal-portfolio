@@ -2,10 +2,11 @@ import { useEffect, useRef, useState } from 'react'
 
 import { useLocation, useNavigate, useOutlet } from 'react-router-dom'
 
-import TalkToMe from '../TalkToMe'
-import useSectionScroll, { sections } from './useSectionScroll'
+import NextSection from '../NextSection'
 import Sidebar from '../Sidebar/'
 import StarField from '../StarField'
+import TalkToMe from '../TalkToMe'
+import useSectionScroll, { sections } from './useSectionScroll'
 import './index.scss'
 
 const TRANSITION_MS = 800
@@ -66,6 +67,7 @@ const Layout = () => {
             }`}
           >
             {layer.element}
+            <NextSection path={layer.key} />
           </div>
         ))}
         <StarField />
