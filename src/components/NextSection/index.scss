@@ -22,14 +22,22 @@
       font-size: 15px;
       letter-spacing: 1px;
       cursor: pointer;
+      transition:
+        background 0.15s ease,
+        color 0.15s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
 
       svg {
         animation: nextNudge 1.6s ease-in-out infinite;
       }
 
+      // pressed state keeps the pill shape
       &:active {
         background: #00ff7f;
         color: #000;
+        transform: scale(0.97);
+        box-shadow: 0 0 0 6px rgba(0, 255, 127, 0.2);
       }
     }
   }

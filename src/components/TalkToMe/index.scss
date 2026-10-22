@@ -8,8 +8,10 @@
   align-items: flex-end;
   gap: 14px;
   font-family: 'Helvetica Neue', sans-serif;
+  pointer-events: none; // the wrapper covers the hidden menu's area; let taps through
 
   .talk-toggle {
+    pointer-events: auto;
     display: flex;
     align-items: center;
     gap: 10px;

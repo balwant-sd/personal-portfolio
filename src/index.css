@@ -12,3 +12,20 @@ body {
   background: #252525;
   overflow: hidden;
 }
+
+/* no rectangular tap flash on phones; buttons give their own shaped feedback */
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* keyboard focus ring follows each control's rounded shape */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #00ff7f;
+  outline-offset: 3px;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
