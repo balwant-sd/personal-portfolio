@@ -9,11 +9,25 @@ import './index.scss'
 
 const workExperience = [
   {
+    id: 0,
+    company: 'Independent',
+    companyUrl: null,
+    position: 'Freelance Product Engineer & Fractional Tech Lead',
+    duration: 'Oct 2026 – Present',
+    location: 'Remote · Open to clients worldwide',
+    achievements: [
+      'Building products end to end for clients, from idea and architecture to launch and iteration.',
+      'Ongoing retainers that keep live products improving, stable, and well monitored.',
+      'Fractional tech leadership: architecture decisions, delivery planning, and guiding engineering teams.',
+      'Shipping faster with agentic AI tools while staying accountable for code quality.'
+    ]
+  },
+  {
     id: 1,
     company: 'Deorwine Infotech',
     companyUrl: 'https://deorwine.com/',
     position: 'Senior Software Developer & Project Manager',
-    duration: 'Oct 2023 – Present',
+    duration: 'Oct 2023 – Oct 2026',
     location: 'Jaipur, Rajasthan, India',
     achievements: [
       'Managed 4+ major product launches and dozens of feature releases.',
@@ -76,11 +90,12 @@ const Experience = () => {
             />
           </h1>
           <p>
-            Since 2019 I’ve grown at Deorwine Infotech from junior developer to
-            senior developer and project manager, shipping products for
+            From 2019 to 2026 I grew at Deorwine Infotech from junior developer
+            to senior developer and project manager, shipping products for
             startups and international clients across logistics, pharma,
-            automotive, and marketplaces. Before that I earned a B.Tech in
-            Computer Science from Rajasthan Technical University, Kota.
+            automotive, and marketplaces. Since October 2026 I work
+            independently with clients. I hold a B.Tech in Computer Science
+            from Rajasthan Technical University, Kota.
           </p>
         </div>
 
@@ -94,9 +109,13 @@ const Experience = () => {
                 <div className="timeline-content">
                   <div className="job-header">
                     <h3 className="company-name">
-                      <a href={job.companyUrl} target="_blank" rel="noreferrer">
-                        {job.company}
-                      </a>
+                      {job.companyUrl ? (
+                        <a href={job.companyUrl} target="_blank" rel="noreferrer">
+                          {job.company}
+                        </a>
+                      ) : (
+                        <span>{job.company}</span>
+                      )}
                     </h3>
                     <h4 className="position">{job.position}</h4>
                     <div className="job-meta">

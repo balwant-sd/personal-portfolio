@@ -4,12 +4,12 @@ import './index.scss'
 
 const questions = [
   {
-    q: 'What can you build for me?',
-    a: 'End-to-end web and mobile products: marketplaces, CRMs, logistics and data platforms. I cover architecture, database design, APIs, frontend, and deployment, plus the integrations that tie it together, like payments, messaging, and maps.',
+    q: 'Can I hire you for a project?',
+    a: "Yes. I work independently and take on product builds from idea to launch, ongoing retainers, and fractional tech lead roles. I'm also open to the right full-time role. Tap Let's talk to start a conversation.",
   },
   {
-    q: 'Can you take an idea to production?',
-    a: 'Yes. I turn rough business goals into clear requirements, design the architecture, build and ship the product with monitoring in place, then keep improving it from real user feedback.',
+    q: 'What can you build for me?',
+    a: 'End-to-end web and mobile products: marketplaces, CRMs, logistics and data platforms. I cover architecture, database design, APIs, frontend, and deployment, plus the integrations that tie it together, like payments, messaging, and maps.',
   },
   {
     q: 'How do you keep delivery on track?',

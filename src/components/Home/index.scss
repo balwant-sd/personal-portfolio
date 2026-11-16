@@ -7,6 +7,37 @@
     width: 40%;
     max-height: 90%;
 
+    // sits above the heading; the margin clears the <h1> code tag
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 52px;
+      padding: 7px 14px;
+      border: 1px solid rgba(0, 255, 127, 0.4);
+      border-radius: 999px;
+      background: rgba(0, 255, 127, 0.08);
+      color: #00ff7f;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      animation: fadeIn 1s 0.6s backwards;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: rgba(0, 255, 127, 0.18);
+      }
+    }
+
+    .availability-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #00ff7f;
+      animation: availabilityPulse 2s ease-out infinite;
+    }
+
     h1 {
       color: #fff;
       font-size: 56px;
@@ -116,5 +147,15 @@
       width: 340px;
       right: 3%;
     }
+  }
+}
+
+@keyframes availabilityPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 127, 0.6);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 8px rgba(0, 255, 127, 0);
   }
 }

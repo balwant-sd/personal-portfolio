@@ -25,6 +25,10 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="text-zone">
+          <button type="button" className="availability" onClick={openTalk}>
+            <span className="availability-dot" aria-hidden="true" />
+            Available for freelance projects
+          </button>
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>

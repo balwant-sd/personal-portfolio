@@ -47,11 +47,11 @@ const About = () => {
             />
           </h1>
           <p>
-            I’m a Senior Software Engineer based in Jaipur, India, working as a
-            forward deployed engineer, team lead, and project manager, with 7+
-            years at Deorwine Infotech. My journey began hands-on
-            in software engineering and organically expanded into team
-            leadership, product thinking, and cross-functional delivery
+            I’m a Senior Software Engineer based in Jaipur, India, now working
+            independently with clients as a product engineer and fractional
+            tech lead. Before that I spent 7+ years at Deorwine Infotech, where
+            my work began hands-on in software engineering and expanded into
+            team leadership, product thinking, and cross-functional delivery
             ownership.
           </p>
           <p>
@@ -64,6 +64,11 @@ const About = () => {
           <p>
             Lately I build and ship with agentic AI tools like Claude Code,
             Codex, Cursor, and Lovable to move from idea to production faster.
+          </p>
+          <p>
+            I take on product builds from idea to launch, ongoing retainers,
+            and fractional tech lead roles, and I’m open to the right full-time
+            role too. If you have something worth building, let’s talk.
           </p>
         </div>
 

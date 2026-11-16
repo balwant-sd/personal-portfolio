@@ -12,7 +12,8 @@ import './index.scss'
 
 const EMAIL = 'balwantsingh.sd@outlook.com'
 const WHATSAPP = '917976609630'
-const GREETING = "Hi Balwant, I came across your portfolio and I'd like to talk."
+const GREETING =
+  "Hi Balwant, I came across your portfolio and I'd like to talk about working together."
 
 const options = [
   {
