@@ -23,9 +23,9 @@
     "web-vitals": "4.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
@@ -53,6 +53,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.25.9",
     "@babel/preset-react": "7.25.9",
+    "@craco/craco": "7.1.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-import": "2.31.0",
     "prettier": "3.3.3"
