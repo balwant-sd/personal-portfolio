@@ -5,7 +5,7 @@ import './index.scss'
 const questions = [
   {
     q: 'Can I hire you for a project?',
-    a: "Yes. I work independently and take on product builds from idea to launch, ongoing retainers, and fractional tech lead roles. I'm also open to the right full-time role. Tap Let's talk to start a conversation.",
+    a: "Yes. I work independently and take on product builds from idea to launch, ongoing retainers, and fractional senior software engineer roles. I'm also open to the right full-time role. Tap Let's talk to start a conversation.",
   },
   {
     q: 'What can you build for me?',

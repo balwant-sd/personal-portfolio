@@ -12,13 +12,13 @@ const workExperience = [
     id: 0,
     company: 'Independent',
     companyUrl: null,
-    position: 'Freelance Product Engineer & Fractional Tech Lead',
+    position: 'Freelance & Fractional Senior Software Engineer',
     duration: 'Oct 2026 – Present',
     location: 'Remote · Open to clients worldwide',
     achievements: [
       'Building products end to end for clients, from idea and architecture to launch and iteration.',
       'Ongoing retainers that keep live products improving, stable, and well monitored.',
-      'Fractional tech leadership: architecture decisions, delivery planning, and guiding engineering teams.',
+      'Fractional senior engineering: architecture decisions, delivery planning, and guiding engineering teams.',
       'Shipping faster with agentic AI tools while staying accountable for code quality.'
     ]
   },

@@ -48,8 +48,8 @@ const About = () => {
           </h1>
           <p>
             I’m a Senior Software Engineer based in Jaipur, India, now working
-            independently with clients as a product engineer and fractional
-            tech lead. Before that I spent 7+ years at Deorwine Infotech, where
+            independently with clients as a freelance and fractional senior
+            software engineer. Before that I spent 7+ years at Deorwine Infotech, where
             my work began hands-on in software engineering and expanded into
             team leadership, product thinking, and cross-functional delivery
             ownership.
@@ -67,8 +67,9 @@ const About = () => {
           </p>
           <p>
             I take on product builds from idea to launch, ongoing retainers,
-            and fractional tech lead roles, and I’m open to the right full-time
-            role too. If you have something worth building, let’s talk.
+            and fractional senior engineering roles, and I’m open to the right
+            full-time role too. If you have something worth building, let’s
+            talk.
           </p>
         </div>
 
