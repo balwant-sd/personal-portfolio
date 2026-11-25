@@ -43,14 +43,6 @@ const workExperience = [
   },
 ]
 
-// headline numbers, all drawn from the CV
-const stats = [
-  { value: '7+', label: 'Years building products' },
-  { value: '10+', label: 'Products shipped' },
-  { value: '5', label: 'Industries' },
-  { value: '8', label: 'People led in a team' },
-]
-
 const Experience = () => {
   const experienceArray = 'Experience'.split('')
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -76,19 +68,12 @@ const Experience = () => {
           <p>
             I grew from junior developer to senior developer and project
             manager, shipping products for startups and international clients
-            across logistics, pharma, automotive, and marketplaces. Today I work with clients as co-founder of FlipFlop
-            Tech Lab, alongside senior engineers, project managers, business
-            analysts, and QA. I hold a B.Tech in Computer Science from Rajasthan
-            Technical University, Kota.
+            across logistics, pharma, automotive, and marketplaces. Today I
+            work with clients as co-founder of FlipFlop Tech Lab, alongside
+            senior engineers, project managers, business analysts, and QA. I
+            hold a B.Tech in Computer Science from Rajasthan Technical
+            University, Kota.
           </p>
-          <ul className="stats-strip">
-            {stats.map((stat) => (
-              <li key={stat.label}>
-                <span className="stat-value">{stat.value}</span>
-                <span className="stat-label">{stat.label}</span>
-              </li>
-            ))}
-          </ul>
         </div>
 
         <div className="experience-container">
