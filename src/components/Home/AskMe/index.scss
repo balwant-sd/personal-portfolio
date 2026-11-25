@@ -59,6 +59,19 @@
     line-height: 1.6;
   }
 
+  .answer-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #ffd700;
+    font-size: 14px;
+    text-decoration: none;
+    animation: fadeIn 0.4s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .caret {
     margin-left: 1px;
     color: #00ff7f;

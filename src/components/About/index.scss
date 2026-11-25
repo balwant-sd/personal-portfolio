@@ -90,3 +90,16 @@
     transform: rotateX(90deg);
   }
 }
+
+// links inside the About text, such as FlipFlop Tech Lab
+.about-page .text-zone p a {
+  color: #00ff7f;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 255, 127, 0.4);
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #ffd700;
+    border-color: #ffd700;
+  }
+}

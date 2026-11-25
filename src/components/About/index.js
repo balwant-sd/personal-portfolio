@@ -47,12 +47,19 @@ const About = () => {
             />
           </h1>
           <p>
-            I’m a Senior Software Engineer based in Jaipur, India, now working
-            independently with clients as a freelance and fractional senior
-            software engineer. Before that I spent 7+ years at Deorwine Infotech, where
-            my work began hands-on in software engineering and expanded into
-            team leadership, product thinking, and cross-functional delivery
-            ownership.
+            I’m a Senior Software Engineer based in Jaipur, India, and
+            co-founder of{' '}
+            <a
+              href="https://flipfloptechlab.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              FlipFlop Tech Lab
+            </a>
+            , a group of senior engineers, project managers, business analysts
+            and QA who deliver complete solutions for clients. My work began
+            hands-on in software engineering and expanded into team leadership,
+            product thinking, and cross-functional delivery ownership.
           </p>
           <p>
             I’ve worked with early-stage startups, mid-scale products, and
@@ -66,10 +73,10 @@ const About = () => {
             Codex, Cursor, and Lovable to move from idea to production faster.
           </p>
           <p>
-            I take on product builds from idea to launch, ongoing retainers,
-            and fractional senior engineering roles, and I’m open to the right
-            full-time role too. If you have something worth building, let’s
-            talk.
+            Together we take on product builds from idea to launch, ongoing
+            retainers, and fractional engineering roles, and I’m open to the
+            right full-time role too. If you have something worth building,
+            let’s talk.
           </p>
         </div>
 

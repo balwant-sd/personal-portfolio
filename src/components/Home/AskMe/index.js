@@ -5,7 +5,11 @@ import './index.scss'
 const questions = [
   {
     q: 'Can I hire you for a project?',
-    a: "Yes. I work independently and take on product builds from idea to launch, ongoing retainers, and fractional senior software engineer roles. I'm also open to the right full-time role. Tap Let's talk to start a conversation.",
+    a: "Yes. We're FlipFlop Tech Lab: senior engineers, project managers, business analysts and QA. We build web apps (PHP and Laravel, Django, Flask, MERN), WordPress and Shopify stores, Flutter apps, AI/ML, AI agents, chatbots and automation, plus DevOps.",
+    link: {
+      href: 'https://flipfloptechlab.com/',
+      label: 'Visit flipfloptechlab.com',
+    },
   },
   {
     q: 'What can you build for me?',
@@ -67,6 +71,19 @@ const AskMe = () => {
           <span className="caret">|</span>
         )}
       </p>
+      {/* an optional link appears once the answer has finished typing */}
+      {active !== null &&
+        questions[active].link &&
+        typed.length === questions[active].a.length && (
+          <a
+            className="answer-link"
+            href={questions[active].link.href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {questions[active].link.label} &rarr;
+          </a>
+        )}
     </div>
   )
 }

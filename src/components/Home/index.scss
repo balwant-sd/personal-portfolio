@@ -147,6 +147,20 @@
       width: 340px;
       right: 3%;
     }
+
+    // smaller B so the Ask-me panel clears the Let's talk button on laptops
+    .logo-container {
+      width: 140px;
+      height: 177px;
+    }
+  }
+}
+
+// short laptop screens: same smaller B, for the same reason
+@media screen and (max-height: 860px) {
+  .home-page .logo-container {
+    width: 140px;
+    height: 177px;
   }
 }
 

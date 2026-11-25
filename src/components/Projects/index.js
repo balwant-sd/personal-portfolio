@@ -18,7 +18,7 @@ const projects = [
     id: 1,
     title: 'CRIM Report',
     description:
-      'A real-time carrier vetting and freight fraud prevention platform that aggregates FMCSA compliance data, industry-reported fraud footprints, and identity verification logs to flag high-risk carriers before loads are booked.',
+      'A carrier vetting and freight fraud prevention platform. It brings together FMCSA compliance data, industry-reported fraud signals and identity checks, so brokers and shippers can spot high-risk carriers before a load is booked.',
     technologies: [
       'Next.js',
       'Supabase',
@@ -28,14 +28,6 @@ const projects = [
     ],
     category: 'Logistics',
     status: 'Live',
-    company: 'Deorwine Infotech',
-    features: [
-      'Forward-deployed engineering contact embedded with clients',
-      'Rapid build-ship-iterate loops with agentic AI tools',
-      'Resilient ingestion pipeline that survived breaking upstream schema changes',
-      'Fixed a sync flaw that blanked ~8M records nightly, guaranteeing zero data gaps',
-      'Post-launch monitoring, root-cause analysis, and hotfixes',
-    ],
     images: [],
     githubUrl: null,
     liveUrl: 'https://www.crimreport.com/',
@@ -45,16 +37,9 @@ const projects = [
     id: 2,
     title: 'Freight Country',
     description:
-      'A logistics marketplace enabling users to manage the complete freight lifecycle end to end.',
+      'A freight marketplace for running the complete freight lifecycle in one place, end to end, with third-party logistics services integrated into the workflow.',
     technologies: ['Next.js', 'Flutter', 'Python', 'PostgreSQL'],
     category: 'Logistics',
-    company: 'Deorwine Infotech',
-    features: [
-      'Led coordination for an 8-member team',
-      'Sprint planning, delivery, and technical discussions',
-      'Client communication and requirement clarification',
-      'Resolved architecture challenges and authored SOPs for third-party API integrations',
-    ],
     images: [],
     githubUrl: null,
     liveUrl: 'https://freightcountry.com/',
@@ -64,16 +49,9 @@ const projects = [
     id: 3,
     title: 'JMSS',
     description:
-      'A CRM platform for automobile dealerships, managing the complete workflow from sales to service.',
+      'A CRM for automobile dealerships that covers the whole journey from sales to service: leads, service tracking, and customer and finance records, with role-based access for each team.',
     technologies: ['Next.js', 'MongoDB', 'Cursor AI'],
     category: 'CRM',
-    company: 'Deorwine Infotech',
-    features: [
-      'Designed and built the entire platform single-handedly',
-      'AI-assisted development cut effort by ~50%',
-      'Scalable architecture with secure access control',
-      'Workflows for leads, service tracking, customers, and finance records',
-    ],
     images: [],
     githubUrl: null,
     liveUrl: null,
@@ -83,16 +61,9 @@ const projects = [
     id: 4,
     title: 'Avasar',
     description:
-      'A digital brand-engagement platform powered by real-time validation and personalization.',
+      'A brand-engagement platform where people complete tasks for brands and earn rewards, with real-time validation of every task and personalised experiences.',
     technologies: ['Laravel', 'Flutter', 'PostgreSQL'],
     category: 'Brand Engagement',
-    company: 'Deorwine Infotech',
-    features: [
-      'Designed the full technical architecture and database schema',
-      'Optimized task and reward workflows',
-      'Led coordination for a 7-member cross-functional team',
-      'Worked with stakeholders to validate solutions and deliver end to end',
-    ],
     images: [],
     githubUrl: null,
     liveUrl: 'https://www.avasar.club',
@@ -102,20 +73,12 @@ const projects = [
     id: 5,
     title: 'Bidbyt',
     description:
-      'An internet startup building F&B marketplaces with the mission of making authentic cuisines easily accessible across borders.',
+      'An F&B marketplace startup that set out to make authentic cuisines easy to order across borders, built as a progressive web app.',
     technologies: ['PWA', 'Next.js', 'Fastify', 'MongoDB'],
     category: 'Marketplace',
-    company: 'Deorwine Infotech',
-    features: [
-      'Grew from developer to leading the product with the founder',
-      'Turned customer feedback and business requirements into features fast',
-      'Owned monitoring, debugging, and day-to-day operations',
-      'Contributed to product and growth strategy',
-    ],
     images: [],
     githubUrl: null,
-    liveUrl: 'https://www.facebook.com/bidbyt',
-    linkLabel: 'Facebook Page',
+    liveUrl: null,
     note: 'No longer operational',
     isPrivate: false,
   },
@@ -123,18 +86,9 @@ const projects = [
     id: 6,
     title: 'MedVol Stockists',
     description:
-      'A B2B web portal where pharmaceutical stockists manage orders, invoices, purchase orders and returns across multiple pharma companies and business modules.',
+      'A B2B portal where pharmaceutical stockists manage orders, invoices, e-invoices, purchase orders and returns across multiple pharma companies. It is configuration-driven, so new business lines launch without rebuilding screens.',
     category: 'Pharma B2B',
-    company: 'Deorwine Infotech',
     technologies: ['Next.js'],
-    features: [
-      'Owned the portal end to end as the only frontend engineer, from wireframes and UI design to architecture and production releases',
-      'Core workflows for orders, invoice upload and tracking, purchase orders, remarks, goods returns, and e-invoice acknowledgements',
-      'Configuration-driven modules: tabs, columns and API versions come from a backend module list, so new business lines ship without rewriting screens',
-      'Led a zero-downtime move from V1 to V2 microservice APIs with a version-dispatch layer running both side by side',
-      'Presigned multi-file document uploads with safeguards against duplicate submissions',
-      'Linked frontend, backend and DevOps: defined API contracts, flagged mismatches early, and coordinated releases',
-    ],
     images: [],
     githubUrl: null,
     liveUrl: 'https://stockist.medvol.in',
@@ -145,35 +99,21 @@ const projects = [
     id: 7,
     title: 'GoFetchIt',
     description:
-      'A Gulf-focused B2C delivery startup where customers request orders, book pickups and returns, and schedule deliveries, while the business assigns drivers manually or automatically in real time.',
+      'A Gulf-focused delivery service where customers request orders, book pickups and returns, and schedule deliveries, while the business assigns drivers manually or automatically in real time.',
     category: 'Logistics',
-    company: 'Deorwine Infotech',
     technologies: ['Express.js', 'React', 'MongoDB', 'Linode', 'AWS S3'],
-    features: [
-      'Owned database design and API development',
-      'Order, pickup, return and scheduled-delivery flows',
-      'Manual and real-time automatic driver assignment',
-      'APIs powering the web app, admin portal and mobile apps',
-    ],
     images: [],
     githubUrl: null,
-    liveUrl: 'https://gofetchit-uae.com/',
+    liveUrl: null,
     isPrivate: false,
   },
   {
     id: 8,
     title: 'LiveLoad',
     description:
-      'An Africa-focused logistics marketplace where customers post single pickup to single delivery loads, vendors bid on them, and the assigned vendor hauls the parcel to its destination.',
+      'An Africa-focused logistics marketplace: customers post a pickup and delivery, vendors bid on the load, and the winning vendor hauls it to its destination. It spans a web app, an admin portal and the APIs behind the mobile apps.',
     category: 'Logistics',
-    company: 'Deorwine Infotech',
     technologies: ['React', 'Fastify', 'MongoDB', 'AWS S3'],
-    features: [
-      'Owned the web app, admin portal, database and API development',
-      'Load posting, vendor bidding and assignment workflows',
-      'Assigned vendors take responsibility for each haul from pickup to delivery',
-      'APIs serving both the web platform and the mobile apps',
-    ],
     images: [],
     githubUrl: null,
     liveUrl: null,
@@ -217,8 +157,8 @@ const Projects = () => {
             />
           </h1>
           <p>
-            A selection of products I’ve built and led across logistics, pharma, CRM,
-            brand engagement, and marketplaces. I’ve also delivered
+            A selection of products I’ve built and led across logistics, pharma,
+            CRM, brand engagement, and marketplaces. I’ve also delivered
             DocumentMaken, Kuwait Local, and more.
           </p>
 
@@ -277,22 +217,10 @@ const Projects = () => {
                       )}
                     </div>
                     <h3 className="project-title">{project.title}</h3>
-                    <p className="company">{project.company}</p>
                   </div>
 
                   {project.description && (
                     <p className="project-description">{project.description}</p>
-                  )}
-
-                  {project.features.length > 0 && (
-                    <div className="project-features">
-                      <h4>Key Features:</h4>
-                      <ul>
-                        {project.features.map((feature, idx) => (
-                          <li key={idx}>{feature}</li>
-                        ))}
-                      </ul>
-                    </div>
                   )}
 
                   {project.technologies.length > 0 && (
