@@ -33,12 +33,12 @@ const workExperience = [
     duration: 'Apr 2019 – Oct 2026',
     location: 'Jaipur, Rajasthan, India',
     achievements: [
-      'Grew from junior developer to senior developer and project manager, leading cross-functional teams of up to 8 people.',
-      'Led 4+ major product launches and dozens of feature releases across logistics, pharma, automotive, brand engagement and F&B marketplaces.',
-      'Made two products ~40% faster through API and database optimisation, and designed the databases and architecture behind major projects.',
-      'Moved a pharma B2B portal from V1 to V2 microservice APIs with zero downtime, and fixed a sync flaw that blanked ~8 million records every night on a freight platform.',
-      'Wrote 5+ SOPs that saved 500+ man-hours, and ran releases across Netlify, Vercel and AWS for 5+ live projects.',
-      'Worked directly with clients in the USA, Australia, UAE and Europe, turning their requirements into delivered products.',
+      'Led cross-functional teams of engineers, designers and QA from planning through delivery and release.',
+      'Led products end to end across logistics, pharma, automotive, brand engagement and F&B marketplaces.',
+      'Designed database schemas and system architecture for products built to scale.',
+      'Improved application performance through API and database optimisation.',
+      'Wrote SOPs for releases and third-party integrations that reduced development effort.',
+      'Worked directly with international clients, turning their requirements into shipped products.',
     ],
   },
 ]
